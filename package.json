@@ -1,0 +1,17 @@
+{
+  "name": "grpc-header-dynamic-loading-example",
+  "version": "0.1.0",
+  "scripts": {
+    "start": "concurrently \"nodemon ./greeter_server.js\" \"nodemon ./greeter_client.js\""
+  },
+  "dependencies": {
+    "@grpc/proto-loader": "^0.1.0",
+    "async": "^1.5.2",
+    "concurrently": "^7.2.2",
+    "google-protobuf": "^3.0.0",
+    "grpc": "^1.11.0",
+    "lodash": "^4.6.1",
+    "minimist": "^1.2.0",
+    "nodemon": "^2.0.19"
+  }
+}

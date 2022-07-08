@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package proshop;
+
+service Orders {
+  rpc getOrders (OrderRequest) returns (OrderResponse) {}
+}
+
+message OrderRequest {
+  string orderId = 1;
+}
+
+message OrderResponse {
+  int32 orderId = 1;
+  string orderDescription =2;
+  repeated ProductItem products = 3;
+
+}
+
+
+message ProductItem {
+  int32 productId = 1;
+  string description = 2;
+  int32 quantity = 3;
+  double price = 4;
+}
+
+
+
